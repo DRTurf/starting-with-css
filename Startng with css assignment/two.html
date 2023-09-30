@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with css assignment Q2</title>
+    <style>
+        .card{
+            padding: 3rem;   /*since there is a block element thatv applies a common style to all the other elements, i don't have to individualy change the style of everything */
+        }
+        .card__paragraph--cyan{
+            background-color: cyan;
+        }
+        .card__paragraph--blueviolet{
+            background-color: blueviolet ;
+        }
+        .card__paragraph--orangered{
+            background-color: orangered;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- bem nomenclature: block__element--modifier
+        so, card is block paragraph is element and the clors are the modifiers -->
+        <p class="card__paragraph--cyan">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptate.</p>
+        <p class="card__paragraph--blueviolet">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptate.</p>
+        <p class="card__paragraph--orangered">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, voluptate.</p>
+    </div>
+</body>
+</html>

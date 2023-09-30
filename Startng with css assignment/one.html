@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starting with css assignment Q1</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .internal{
+            width: 200px; 
+            height: 200px; 
+            background-color: orangered; 
+            border: 1px solid black;
+        }
+        .internal_two{
+            width: 200px; 
+            height: 200px; 
+            background-color: teal; 
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+     <!-- way to apply inline styles to a div element. -->
+    <div class="inline" style="width: 200px; height: 200px; background-color: aqua; border: 1px solid black;"></div>
+    
+    <!-- way to apply internal styles to a div element. -->
+    <div class="internal"></div>
+    
+    <!-- way to apply external styles to a div element. -->
+    <div class="external"></div>
+
+    <!-- what happens when internal and external styles are applied to the same div element -->
+    <div class="internal_two external_two "></div> <!--only the internal styles is showing because of priority order -->
+    <div class=" external_two internal_two"></div> <!--position fo the classes applied makes no differernce-->
+
+    <!-- what happens when internal and inline styles are applied to the same div element -->
+    <div class="internal_two" style="width: 200px; height: 200px; background-color: red; border: 1px solid black;"></div> <!--only the inline styles is showing because of priority order -->
+    
+    <!-- what happens when external and inline styles are applied to the same div element -->
+    <div class="external_two" style="width: 200px; height: 200px; background-color: blueviolet; border: 1px solid black;"></div> <!--only the inline styles is showing because of priority order -->
+    
+    <!-- what happens when internal, external and inline styles are applied to the same div element -->
+    <div class="internal_two external_two" style="width: 200px; height: 200px; background-color: greenyellow; border: 1px solid black;"></div> <!--only the inline styles is showing because of priority order -->
+</body>
+</html>
